@@ -1,0 +1,30 @@
+<apex:page >
+    <style>
+      div[id$=BlockWithRedColor] label {
+        color: red;
+      }
+      div[id$=BlockWithBlueColor] label {
+        color: blue;
+      }
+
+    </style>
+  <apex:pageBlock id="BlockWithRedColor" >
+          <apex:pageBlockSection title="Block Section One" id="Section1">
+              <apex:outputLabel >Hey</apex:outputLabel>
+          </apex:pageblocksection>
+          <apex:PageBlockSection title="Block Section Two" id="Section2">
+
+          </apex:PageBlockSection>
+
+</apex:pageBlock>
+
+<apex:pageBlock id="BlockWithBlueColor" >
+          <apex:pageBlockSection title="Block Section One" id="Section11">
+              <apex:outputLabel >Hey</apex:outputLabel>
+          </apex:pageblocksection>
+          <apex:PageBlockSection title="Block Section Two" id="Section22">
+
+          </apex:PageBlockSection>
+
+</apex:pageBlock>
+</apex:page>

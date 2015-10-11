@@ -1,0 +1,25 @@
+<aura:component controller="ContactsController">
+   <aura:attribute name="contacts" type="List" />
+   <!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}" /> -->
+   <aura:handler event="c:AccountSelected" action="{!c.displayContacts}"/>
+    <!-- Use the Apex model and controller to fetch server side data -->
+   <table class="slds-table slds-table--bordered slds-table--striped">
+      <thead>
+        <tr>
+           <th scope="col"><span class="slds-truncate">ID</span></th>
+           <th scope="col"><span class="slds-truncate">First Name</span></th>
+           <th scope="col"><span class="slds-truncate">Last Name</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <aura:iteration items="{!v.contacts}" var="contact">
+         <tr>
+           <td>{!contact.Id}</td>
+           <td>{!contact.FirstName}</td>                 
+           <td>{!contact.LastName}</td>
+
+         </tr>
+        </aura:iteration>
+      </tbody>
+   </table>
+</aura:component>
