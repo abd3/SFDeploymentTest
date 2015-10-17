@@ -3,6 +3,6 @@
     <!-- Listen to change in params value -->
     <aura:handler name="change" value="{!v.params}" action="{!c.makeRequest}"/>
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
-	<aura:registerEvent name="response" type="abd_pre:RestResponse"/>
+	<aura:registerEvent name="response" type="c:RestResponse"/>
 	<iframe aura:id="vfIframe" style='display:none;' src="/apex/RestAPI"></iframe>
 </aura:component>

@@ -1,0 +1,14 @@
+<aura:documentation>
+  <aura:description>
+    <p>The <code>SFRest</code> component allows </p>
+    <!--More markup here, such as <pre> for code samples-->
+  </aura:description>
+  <aura:example name="accountAccess" ref="abd_pre:SFRestExample" label="Using the
+  abd_pre:SFRest Component">
+    <p>This example shows a simple setup of <code>myComponent</code>.</p>
+  </aura:example>
+  <aura:example name="mySecondExample" ref="np:mySecondExample" label="Customizing the
+  np:myComponent Component">
+    <p>This example shows how you can customize <code>myComponent</code>.</p>
+  </aura:example>
+</aura:documentation>

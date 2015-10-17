@@ -4,7 +4,7 @@
   <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
 
   <!-- Load SFRest component, pass in http params and then handle the response -->
-  <abd_pre:SFRest params="{!v.reqParams}" response="{!c.handleResponse}"/>
+  <c:SFRest params="{!v.reqParams}" response="{!c.handleResponse}"/>
 
   <aura:iteration items="{!v.accounts}" var="account">
     {!account.Name}

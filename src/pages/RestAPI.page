@@ -17,8 +17,11 @@
     var req = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
     var t1 = 0;
     var t2 = 0;
+    var RESPONSE_RECEIVED = 4;
+
+    // Handle responses by detecting when the XHR's ready state changes
     req.onreadystatechange = function() {
-      if (req.readyState != 4) {
+      if (req.readyState != RESPONSE_RECEIVED) {
         return;
       }
       t2 = Date.now();

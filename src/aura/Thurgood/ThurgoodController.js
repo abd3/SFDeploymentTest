@@ -1,6 +1,6 @@
 ({
   doInit : function(component, event, helper) {
-    component.set("v.reqParams", {
+    component.set("v.thurgoodRequest", {
       type:'request', //this is for iframe to know we are asking for a request
         xhrConfig: { //this is actual http obj
           method: 'GET',
@@ -13,6 +13,6 @@
   },
   handleResponse: function(component, event, helper) {
     var data = event.getParam("data");
-    component.set("v.accounts", data.body.records);
+    // component.set("v.accounts", data.body.records);
   }
 })

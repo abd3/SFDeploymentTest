@@ -1,0 +1,9 @@
+<aura:component >
+  <aura:attribute name="thurgoodRequest" type="Object" description="http params"/>
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+  <!-- Load SFRest component, pass in http params and then handle the response -->
+  <abd_pre:SFRest params="{!v.thurgoodRequest}" response="{!c.handleResponse}"/>
+
+
+</aura:component>

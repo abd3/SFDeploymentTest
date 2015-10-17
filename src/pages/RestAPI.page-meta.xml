@@ -4,4 +4,9 @@
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
     <label>RestAPI</label>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>45</minorNumber>
+        <namespace>ACalculator</namespace>
+    </packageVersions>
 </ApexPage>
