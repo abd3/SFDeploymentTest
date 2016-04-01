@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable">
+
+    <div>
+        <div>
+            <c:AccountMap />
+        </div>
+        <h1>This is Awesome</h1>
+        <div class="test">
+            <c:AccountList />
+        </div>
+    </div>
+
+</aura:component>

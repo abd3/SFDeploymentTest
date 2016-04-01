@@ -1,6 +1,6 @@
 ({
   doInit : function(component, event, helper) {
-    component.set("v.thurgoodRequest", {
+    component.set("v.reqParams", {
       type:'request', //this is for iframe to know we are asking for a request
         xhrConfig: { //this is actual http obj
           method: 'GET',
